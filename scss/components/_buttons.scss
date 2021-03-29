@@ -1,0 +1,61 @@
+/* ============================================= */
+/*              Buttons                          */
+/* ============================================= */
+
+.btn {
+  margin-top: 15px;
+  width: 100%;
+  color: $white;
+  border: none;
+  padding: 10px 0;
+  text-transform: uppercase;
+  border-radius: 5px;
+  @media #{$bp-desktop} {
+    padding: 10px 30px;
+  }
+  & + & {
+    @media #{$bp-desktop} {
+      margin-left: $margin-10;
+    }
+  }
+}
+
+.default {
+  background-color: $secondary-color;
+  &:hover {
+    background-color: $secondary-light;
+    transition: .4s;
+  }
+}
+
+.error {
+  background-color: $btn-error-color;
+  &:hover {
+    background-color: $btn-error-light;
+    transition: .4s;
+  }
+}
+
+.info {
+  background-color: #927bc1;
+  &:hover {
+    background-color: $btn-info-light;
+    transition: .4s;
+  }
+}
+
+.success {
+  background-color: #63cc82;
+  &:hover {
+    background-color: $btn-success-light;
+    transition: .4s;
+  }
+}
+
+.warning {
+  background-color: #fd7856;
+  &:hover {
+    background-color: $btn-warning-light;
+    transition: .4s;
+  }
+}

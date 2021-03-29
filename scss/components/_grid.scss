@@ -1,0 +1,168 @@
+/* ============================================= */
+/*              Grid System                      */
+/* ============================================= */
+
+.container {
+  padding: 0 10px;
+  @media #{$bp-desktop} {
+    max-width: 1400px;
+    @include center;
+  }
+}
+
+.row {
+  @include flex-column;
+  padding: 1em 10px;
+  @media #{$bp-desktop} {
+    flex-direction: row;
+  }
+}
+
+[class^=col] {
+  margin-top: 10px;
+  flex-basis: 100%;
+  min-height: 25px;
+  padding: 10px;
+  border-radius: 5px;
+  @media #{$bp-desktop} {
+    display: flex;
+    justify-content: center;
+    margin-top: 0;
+    align-items: center;
+  }
+  & + & {
+    @media #{$bp-desktop} {
+      margin-left: $margin-10;
+    }
+  }
+}
+
+.theme.col-1 {
+  background-color: $btn-info-color;
+}
+
+.theme.col-2 {
+  background-color: $btn-warning-color;
+}
+
+.theme.col-3 {
+  background-color: #deb2ee;
+}
+
+.theme.col-4 {
+  background-color: #7ee6fd;
+}
+
+.theme.col-5 {
+  background-color: #88d9a0;
+}
+
+.theme.col-6 {
+  background-color: #4da2bb;
+}
+
+.theme.col-7 {
+  background-color: #ec9fa3;
+}
+
+.theme.col-8 {
+  background-color: #fd9f85;
+}
+
+.theme.col-9 {
+  background-color: $btn-error-color;
+}
+
+.theme.col-10 {
+  background-color: $btn-success-color;
+}
+
+.theme.col-11 {
+  background-color: $secondary-color;
+}
+
+.theme.col-12 {
+  background-color: #80e8d1;
+}
+
+.card {
+  flex-basis: 100%;
+}
+
+.centered {
+  @media #{$bp-desktop} {
+    @include center;
+  }
+}
+
+.col-1 {
+  @media #{$bp-desktop} {
+    flex-basis: 8.33%;
+  }
+}
+
+.col-2 {
+  @media #{$bp-desktop} {
+    flex-basis: 16.67%;
+  }
+}
+
+.col-3 {
+  @media #{$bp-desktop} {
+    flex-basis: 25.00%;
+  }
+}
+
+.col-4 {
+  @media #{$bp-desktop} {
+    flex-basis: 33.33%;
+  }
+}
+
+.col-5 {
+  @media #{$bp-desktop} {
+    flex-basis: 41.67%;
+  }
+}
+
+.col-6 {
+  @media #{$bp-desktop} {
+    flex-basis: 50.00%;
+  }
+}
+
+.col-7 {
+  @media #{$bp-desktop} {
+    flex-basis: 58.33%;
+  }
+}
+
+.col-8 {
+  @media #{$bp-desktop} {
+    flex-basis: 66.67%;
+  }
+}
+
+.col-9 {
+  @media #{$bp-desktop} {
+    flex-basis: 75.00%;
+  }
+}
+
+.col-10 {
+  @media #{$bp-desktop} {
+    flex-basis: 83.33%;
+  }
+}
+
+.col-11 {
+  @media #{$bp-desktop} {
+    flex-basis: 91.67%;
+  }
+}
+
+.col-12 {
+  @media #{$bp-desktop} {
+    flex-basis: 100%;
+  }
+}
