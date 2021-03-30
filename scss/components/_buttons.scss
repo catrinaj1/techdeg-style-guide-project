@@ -37,7 +37,7 @@
 }
 
 .info {
-  background-color: #927bc1;
+  background-color: $btn-info-color;
   &:hover {
     background-color: $btn-info-light;
     transition: .4s;
@@ -45,7 +45,7 @@
 }
 
 .success {
-  background-color: #63cc82;
+  background-color: $btn-success-color;
   &:hover {
     background-color: $btn-success-light;
     transition: .4s;
@@ -53,7 +53,7 @@
 }
 
 .warning {
-  background-color: #fd7856;
+  background-color: $btn-warning-color;
   &:hover {
     background-color: $btn-warning-light;
     transition: .4s;
